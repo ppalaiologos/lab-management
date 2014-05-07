@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert :: Program</title>
+</head>
+<body>
+<h4> Insert a program </h4>
+<p>Here you can insert a program into the database</p>
+<p>Complete the following fields and click "Confirm" to confirm the data</p>
+<form method="post" action="/Servlet/exam_servlet">
+<input type="hidden" name="requestType" value="InsertProg"/>
+<table>
+<tr><td>Program name: (max 30 characters)</td><td><input type="text" name="progName" maxlength="30" /></td></tr>
+<tr><td>Program type</td>
+<td><p>
+<input type="radio" name="progType" value="utility" checked="checked"/>Utility Program <br/>
+<input type="radio" name="progType" value="OS" />Operating System <br/>
+<input type="radio" name="progType" value="tool" />A Tool <br/>
+<input type="radio" name="progType" value="driver" />A driver <br/>
+<input type="radio" name="progType" value="multimedia" />A multimedia utility <br/>
+</p></td></tr>
+<tr><td><input type="submit" name="submit" value="Confirm" /></td></tr>
+</table>
+</form>
+<br/><br/><br/><br/>
+<a href="/Servlet/insert.html">Return to Insert :: Home</a><br/>
+<a href="/Servlet/index.html">Return to Home</a>
+</body>
+</html>

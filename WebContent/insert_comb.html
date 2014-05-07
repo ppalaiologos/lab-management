@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert :: Program/PC</title>
+</head>
+<body>
+<h4> Insert a program into a PC </h4>
+<p>Here you can add a program to a PC</p>
+<p>Complete the following fields and click "Confirm" to confirm the data</p>
+<form method="post" action="/Servlet/exam_servlet">
+<input type="hidden" name="requestType" value="InsertPCProg"/>
+<table>
+<tr><td>Computer ID: (the number of the PC in the lab)</td><td><input type="text" name="PC_ID" /></td></tr>
+<tr><td>Program name: </td><td><input type="text" name="progName" maxlength="30" /></td></tr>
+<tr><td><input type="submit" name="submit" value="Confirm" /></td></tr>
+</table>
+</form>
+<br/><br/><br/><br/>
+<a href="/Servlet/insert.html">Return to Insert :: Home</a><br/>
+<a href="/Servlet/index.html">Return to Home</a>
+</body>
+</html>
